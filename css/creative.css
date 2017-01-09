@@ -54,6 +54,8 @@ p {
 }
 td {
   padding: 3px;
+  vertical-align: top;
+  text-align: left;
 }
 section {
   padding: 100px 0;
