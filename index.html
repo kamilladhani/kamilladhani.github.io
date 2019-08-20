@@ -34,7 +34,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top">
@@ -436,11 +435,13 @@
 
     <div class="mastfoot">
         <div class="text-center">
-            <p>Copyright © 2018 Kamil Ladhani. All Rights Reserved.</p>
+            <p>Copyright © <span id="year"></span> Kamil Ladhani. All Rights Reserved.</p>
         </div>
     </div>
 
-        
+
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>    
+    
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
