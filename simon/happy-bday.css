@@ -1,0 +1,77 @@
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+p {
+	margin: 0 0;
+	position: absolute;
+	font: 16px Verdana;
+	color: #eee;
+	height: 25px;
+	top: calc( 100vh - 30px );
+	text-shadow: 0 0 2px white;
+}
+p a {
+	text-decoration: none;
+	color: #aaa;
+}
+span {
+	font-size: 11px;
+}
+p > a:first-of-type {
+	font-size: 20px;
+}
+body {
+	overflow-x: hidden;
+  background: #111111;
+}
+/* 
+.office-banner {
+  background-color: #e2ddd8;
+  font-family: "Arial";
+  padding: 0.125em;
+  font-size: 4em;
+  text-align: center;
+  white-space: nowrap;
+  transform: rotate(-10deg);
+  position: fixed;
+  top: 40%;
+  left: -5%;
+  right: -5%;
+  z-index: 100;
+  margin-top: 0;
+} */
+
+#canvas-block-off {
+  height: 280px;
+}
+
+#text-p1-container {
+  padding: 0px 80px;
+  color: white;
+  width: 100%;
+  z-index: 3284;
+  padding-bottom: 60px;
+}
+
+.bday-text {
+  display: block;
+  text-align: center;
+}
+
+#pidgey-count {
+  font-size: 30px;
+}
+
+#bday-start-container, #bday-cheat-container {
+  padding-top: 20px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
