@@ -35,7 +35,7 @@ setTimeout(() => {
 }, 10000);
 
 setTimeout(() => {
-	if (pidgeyCount < 15) {
+	if (pidgeyCount < 25) {
 		$("#sorry").show();
 	} else {
 		$("#success").show();
@@ -43,3 +43,8 @@ setTimeout(() => {
 }, 12000);
 
 $("#pidgey-count").html(pidgeyCount);
+
+
+$("#success").on('click', () => {
+	location.href = "final-page.html";
+  });

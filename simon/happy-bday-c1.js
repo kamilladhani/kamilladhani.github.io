@@ -1,4 +1,4 @@
-
+counter = 
 $(".k-btn").on('click', () => {
 	const q1v = $("#p1-q1-i").val();
 	if (q1v==="2.41" || q1v==="2.42") {

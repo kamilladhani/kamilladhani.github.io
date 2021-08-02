@@ -26,7 +26,7 @@ body {
 	overflow-x: hidden;
   background: #111111;
 }
-/* 
+
 .office-banner {
   background-color: #e2ddd8;
   font-family: "Arial";
@@ -41,14 +41,14 @@ body {
   right: -5%;
   z-index: 100;
   margin-top: 0;
-} */
+}
 
 #canvas-block-off {
   height: 280px;
 }
 
 #text-p1-container, #pidgey-container {
-  padding: 0px 80px;
+  padding: 20px 80px;
   color: white;
   width: 100%;
   z-index: 3284;
@@ -60,6 +60,9 @@ body {
   text-align: center;
 }
 
+.k-btn {
+  margin-top: 10px;
+}
 
 .form-group {
   text-align: left;
@@ -67,12 +70,16 @@ body {
 }
 
 
-#text-p2-1 {
+#text-p2-1, #pgy-challenge-btn, .center {
   text-align: center;
 }
 
-#pgy-challenge-btn {
-  text-align: center;
+#final-container {
+  padding-top: 40px;
+  color: white;
+  width: 100%;
+  z-index: 3284;
+  padding-bottom: 60px;
 }
 
 #p1-q1 {

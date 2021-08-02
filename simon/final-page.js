@@ -1,13 +1,61 @@
+var colors = ["#8b5642", "#6a696b"];
+
+function frame() {
+  confetti({
+    particleCount: 2,
+    angle: 60,
+    spread: 55,
+    origin: { x: 0 },
+    colors: colors,
+  });
+  confetti({
+    particleCount: 2,
+    angle: 120,
+    spread: 55,
+    origin: { x: 1 },
+    colors: colors,
+  });
+
+  if (Date.now() < Date.now() + 15000) {
+    requestAnimationFrame(frame);
+  }
+}
+
+window.onload = frame();
+
+
+setTimeout(() => {
+  $('#text-p1-1').fadeIn(2000).delay(6000).promise().done(() => {
+    $('#text-p1-2').fadeIn(2000).delay(4000).promise().done(() => {
+      $('#text-p1-3').fadeIn(2000).delay(3000).promise().done(() => {
+        $('#text-p1-4').fadeIn(2000).delay(1000).promise().done(() => {
+          $('#bday-start-container').fadeIn(2000);
+          $('#bday-cheat-container').fadeIn(2000);
+        });
+      });
+    });
+  });
+}, 5000);
+
+
+
+$("#bday-start-container").on('click', () => {
+  location.href = "challenge-1.html";
+});
+
+$("#bday-cheat-container").on('click', () => {
+  location.href = "happy-bday-cheat.html";
+});
 
 var w = c.width = window.innerWidth,
-		h = c.height = window.innerHeight,
+		h = c.height = 300,
 		ctx = c.getContext( '2d' ),
 		
 		hw = w / 2, // half-width
 		hh = h / 2,
 		
 		opts = {
-			strings: [ 'NICE', "TRY!" ],
+			strings: [ 'HAPPY', "40th", 'BIRTHDAY', 'SIMON!' ],
 			charSize: 30,
 			charSpacing: 35,
 			lineHeight: 40,
@@ -394,7 +442,7 @@ anim();
 window.addEventListener( 'resize', function(){
 	
 	w = c.width = window.innerWidth;
-	h = c.height = window.innerHeight;
+	h = c.height = 300;
 	
 	hw = w / 2;
 	hh = h / 2;
