@@ -24,38 +24,36 @@
 // window.onload = frame();
 
 
-setTimeout(() => {
-  $('#text-p1-1').fadeIn(2000).delay(6000).promise().done(() => {
-    $('#text-p1-2').fadeIn(2000).delay(4000).promise().done(() => {
-      $('#text-p1-3').fadeIn(2000).delay(3000).promise().done(() => {
-        $('#text-p1-4').fadeIn(2000).delay(1000).promise().done(() => {
-          $('#bday-start-container').fadeIn(2000);
-          $('#bday-cheat-container').fadeIn(2000);
-        });
-      });
-    });
-  });
-}, 5000);
+// setTimeout(() => {
+//   $('#text-p1-1').fadeIn(2000).delay(6000).promise().done(() => {
+//     $('#text-p1-2').fadeIn(2000).delay(6000).promise().done(() => {
+//       $('#text-p1-3').fadeIn(2000).delay(6000).promise().done(() => {
+//         $('#text-p1-4').fadeIn(2000).delay(2000).promise().done(() => {
+//           $('#bday-start-container').fadeIn(2000);
+//           $('#bday-cheat-container').fadeIn(2000);
+//         });
+//       });
+//     });
+//   });
+// }, 5000);
 
 
 
-$("#bday-start-container").on('click', () => {
-  location.href = "challenge-1.html";
-});
+// $("#bday-start-container").on('click', () => {
+//   location.href = "challenge-1.html";
+// });
 
-$("#bday-cheat-container").on('click', () => {
-  location.href = "happy-bday-cheat.html";
-});
+
 
 var w = c.width = window.innerWidth,
-		h = c.height = 300,
+		h = c.height = window.innerHeight,
 		ctx = c.getContext( '2d' ),
 		
 		hw = w / 2, // half-width
 		hh = h / 2,
 		
 		opts = {
-			strings: [ 'HAPPY', "40th", 'BIRTHDAY', 'SIMON!' ],
+			strings: [ 'NICE', "TRY!" ],
 			charSize: 30,
 			charSpacing: 35,
 			lineHeight: 40,
@@ -442,7 +440,7 @@ anim();
 window.addEventListener( 'resize', function(){
 	
 	w = c.width = window.innerWidth;
-	h = c.height = 300;
+	h = c.height = window.innerHeight;
 	
 	hw = w / 2;
 	hh = h / 2;
