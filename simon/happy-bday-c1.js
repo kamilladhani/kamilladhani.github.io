@@ -12,6 +12,11 @@ $(".k-btn").on('click', () => {
 
 	const q3v = $("#p1-q3-i").val();
 	if (q3v==="347") {
+		$("#p1-q4").show();
+	}
+
+	const q4v = $("#p1-q4-i").val();
+	if (q4v==="alomomola") {
 		$("#next-container").show();
 	}
 })

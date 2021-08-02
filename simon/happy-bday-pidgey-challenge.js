@@ -46,5 +46,5 @@ $("#pidgey-count").html(pidgeyCount);
 
 
 $("#success").on('click', () => {
-	location.href = "final-page.html";
+	location.href = "shiny-hunt.html";
   });
