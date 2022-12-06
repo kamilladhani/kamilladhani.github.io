@@ -24,9 +24,12 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.css" rel="stylesheet">
-
+    
     <!-- Google Analytics -->
     <script src="js/analytics.js"></script>
+
+    <!-- Timeline -->
+    <link href="css/timeline.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -124,16 +127,13 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-file-text text-primary sr-icons"></i>
                         <h3>Web Development</h3>
-                        <p class="text-muted">Angular</p>
                         <p class="text-muted">React</p>
                         <p class="text-muted">React Native</p>
-                        <p class="text-muted">NodeJS</p>
+                        <p class="text-muted">Angular</p>
                         <p class="text-muted">HTML</p>
                         <p class="text-muted">CSS/Sass</p>
                         <p class="text-muted">Javascript</p>
-                        <p class="text-muted">jQuery</p>
-                        <p class="text-muted">Material UI</p>
-                        <p class="text-muted">Bootstrap</p>
+                        <p class="text-muted">NodeJS</p>
                     </div>
                 </div>    
                 <div class="col-lg-4 col-md-4 col-sm-6 text-center">
@@ -160,49 +160,85 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                     <h2 class="section-heading">Recent Employment</h2>
                     <hr class="light">
-                    <table style="font-size:18px; width:100%; text-align:left;"> 
-                        <tr> 
-                            <td><b>Position</b></td>
-                            <td><b>Company</b></td>
-                            <td><b>Dates</b></td>
-                        </tr>
-                        <tr> <td colspan="3"> </td> </tr>
-                        <tr> 
-                            <td> Web Developer </td>
-                            <td> Cayenta </td>
-                            <td> May 2017 - Present </td>
-                        </tr>
-                        <tr> 
-                            <td> Software Developer </td>
-                            <td> Karos Health </td>
-                            <td> Jan - Apr 2016 </td>
-                        </tr>
-                        <tr> 
-                            <td> Computer Programmer </td>
-                            <td> Grand River Hospital </td>
-                            <td> May - Aug 2015 </td>
-                        </tr>
-                        <tr> 
-                            <td> CS Instructional Support Assistant </td>
-                            <td> University of Waterloo </td>
-                            <td> Sept - Dec 2014 </td>
-                        </tr>
-                        <tr> 
-                            <td> CS Instructional Support Assistant </td>
-                            <td> University of Waterloo </td>
-                            <td> Jan - Apr 2014 </td>
-                        </tr>
-                        <tr> 
-                            <td> Technical Assistant </td>
-                            <td> Lonsdale Medical Clinic </td>
-                            <td> May - Aug 2013 </td>
-                        </tr>
-                        <tr> 
-                            <td> Website/Marketing Assistant </td>
-                            <td> Kamisha Properties Ltd.</td>
-                            <td> May - Aug 2011 </td>
-                        </tr>
-                    </table>
+                    <div class="timeline" style="color:black"> 
+                        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                            <div class="timeline__event__icon ">
+                                <a href="https://www.elemy.com" target='_blank'>
+                                    <img style="width: 65px; height: 65px; border-radius: 50px;" src="img/elemy.png" alt="Elemy">
+                                </a>
+                            </div>
+                            <div class="timeline__event__date">
+                                Elemy <br>
+                                Oct 2021 - Dec 2022
+                            </div>
+                            <div class="timeline__event__content ">
+                                <div class="timeline__event__title">
+                                    Senior Software Engineer, Frontend
+                                </div>
+                                <div class="timeline__event__description">
+                                    <p>Developed software for pediatric behavioral healthcare - helping families with children navigate autism, ADHD, anxiety, and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                            <div class="timeline__event__icon ">
+                                <a href="https://www.cayenta.com" target='_blank'>
+                                    <img style="width: 65px; height: 65px; border-radius: 50px;" src="img/cayenta.jpeg" alt="Cayenta">
+                                </a>
+                            </div>
+                            <div class="timeline__event__date">
+                                Cayenta <br>
+                                May 2017 - Sept 2021
+                            </div>
+                            <div class="timeline__event__content ">
+                                <div class="timeline__event__title">
+                                    Web Developer
+                                </div>
+                                <div class="timeline__event__description">
+                                    <p>Developed modernized web applications to present and assess utility customer data</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                            <div class="timeline__event__icon ">
+                                <a href="https://www.vitalimages.com" target='_blank'>
+                                    <img style="width: 65px; height: 65px; border-radius: 50px;" src="img/karoshealth.png" alt="Karos Health">
+                                </a>
+                            </div>
+                            <div class="timeline__event__date">
+                                Karos Health <br>
+                                Jan 2016 - Apr 2016
+                            </div>
+                            <div class="timeline__event__content ">
+                                <div class="timeline__event__title">
+                                    Software Developer
+                                </div>
+                                <div class="timeline__event__description">
+                                    <p>Developed innovative, health care based software products in an JIRA agile (scrum-based) environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__event animated fadeInUp timeline__event--type1">
+                            <div class="timeline__event__icon ">
+                                <a href="https://www.grhosp.on.ca/" target='_blank'>
+                                    <img style="width: 65px; height: 65px; border-radius: 50px;" src="img/grh.jpeg" alt="Grand River Hospital">
+                                </a>
+                            </div>
+                            <div class="timeline__event__date">
+                                Grand River Hospital <br>
+                                May 2015 - Aug 2015
+                            </div>
+                            <div class="timeline__event__content ">
+                                <div class="timeline__event__title">
+                                    Computer Programmer
+                                </div>
+                                <div class="timeline__event__description">
+                                    <p>Developed software for medical physicists to verify patient plans.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
